@@ -6,101 +6,122 @@ export default function Contact() {
   return (
     <section
       id="contact"
-      className="relative py-24 bg-[#0F172A] overflow-hidden"
+      className="relative py-20 md:py-24 bg-[#0F172A] overflow-hidden"
     >
       {/* Background Glow */}
-      <div className="absolute top-10 left-10 w-72 h-72 bg-cyan-500/20 blur-[120px] rounded-full" />
-      <div className="absolute bottom-10 right-10 w-72 h-72 bg-purple-500/20 blur-[120px] rounded-full" />
+      <div className="absolute top-0 left-0 w-52 h-52 sm:w-72 sm:h-72 lg:w-80 lg:h-80 bg-cyan-500/20 blur-[120px] rounded-full" />
 
-      <div className="max-w-7xl mx-auto px-6">
+      <div className="absolute bottom-0 right-0 w-52 h-52 sm:w-72 sm:h-72 lg:w-80 lg:h-80 bg-purple-500/20 blur-[120px] rounded-full" />
+
+      <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Heading */}
         <motion.div
           initial={{ opacity: 0, y: 40 }}
           whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6 }}
           viewport={{ once: true }}
-          className="text-center mb-20"
+          className="text-center mb-14"
         >
-          <span className="text-cyan-400 uppercase tracking-[4px]">
+          <span className="text-cyan-400 uppercase tracking-[4px] text-sm font-semibold">
             Contact
           </span>
 
-          <h2 className="text-4xl md:text-6xl font-bold text-white mt-4">
-            Let's
+          <h2 className="mt-4 text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-white">
+            Let's{" "}
             <span className="bg-gradient-to-r from-cyan-400 via-blue-500 to-purple-500 bg-clip-text text-transparent">
-              {" "}
               Work Together
             </span>
           </h2>
 
-          <p className="text-gray-400 mt-5 max-w-2xl mx-auto">
-            Have a project in mind or looking for a React / MERN developer? Feel
-            free to contact me.
+          <p className="mt-5 max-w-2xl mx-auto px-2 text-sm sm:text-base leading-7 text-gray-400">
+            Have a project in mind or looking for a MERN Stack Developer? Feel
+            free to reach out. I'm always open to discussing new opportunities
+            and collaborations.
           </p>
         </motion.div>
 
-        <div className="grid lg:grid-cols-2 gap-12">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-14">
           {/* Contact Information */}
           <motion.div
             initial={{ opacity: 0, x: -40 }}
             whileInView={{ opacity: 1, x: 0 }}
+            transition={{ duration: 0.6 }}
             viewport={{ once: true }}
           >
-            <h3 className="text-3xl font-bold text-white mb-8">Get In Touch</h3>
+            <h3 className="text-2xl sm:text-3xl font-bold text-white mb-8">
+              Get In Touch
+            </h3>
 
-            <div className="space-y-6">
-              <div className="flex gap-5 p-5 rounded-2xl bg-white/5 border border-white/10">
-                <Mail className="text-cyan-400" />
+            <div className="space-y-5">
+              {/* Email */}
+              <div className="flex items-start gap-4 p-4 sm:p-5 rounded-2xl bg-white/5 border border-white/10 hover:border-cyan-400 transition-all duration-300">
+                <div className="w-12 h-12 rounded-xl bg-cyan-500/10 flex items-center justify-center">
+                  <Mail className="text-cyan-400" />
+                </div>
+
                 <div>
                   <h4 className="text-white font-semibold">Email</h4>
-                  <p className="text-gray-400">amarjitpatil2002@gmail.com</p>
+
+                  <p className="text-gray-400 break-all">
+                    amarjitpatil2002@gmail.com
+                  </p>
                 </div>
               </div>
 
-              <div className="flex gap-5 p-5 rounded-2xl bg-white/5 border border-white/10">
-                <Phone className="text-cyan-400" />
+              {/* Phone */}
+              <div className="flex items-start gap-4 p-4 sm:p-5 rounded-2xl bg-white/5 border border-white/10 hover:border-cyan-400 transition-all duration-300">
+                <div className="w-12 h-12 rounded-xl bg-cyan-500/10 flex items-center justify-center">
+                  <Phone className="text-cyan-400" />
+                </div>
+
                 <div>
                   <h4 className="text-white font-semibold">Phone</h4>
+
                   <p className="text-gray-400">+91 76662 25895</p>
                 </div>
               </div>
 
-              <div className="flex gap-5 p-5 rounded-2xl bg-white/5 border border-white/10">
-                <MapPin className="text-cyan-400" />
+              {/* Location */}
+              <div className="flex items-start gap-4 p-4 sm:p-5 rounded-2xl bg-white/5 border border-white/10 hover:border-cyan-400 transition-all duration-300">
+                <div className="w-12 h-12 rounded-xl bg-cyan-500/10 flex items-center justify-center">
+                  <MapPin className="text-cyan-400" />
+                </div>
+
                 <div>
                   <h4 className="text-white font-semibold">Location</h4>
+
                   <p className="text-gray-400">Pune, Maharashtra, India</p>
                 </div>
               </div>
             </div>
 
             {/* Social Icons */}
-            {/* Social Icons */}
-            <div className="flex gap-5 mt-10">
+            <div className="flex flex-wrap gap-4 mt-10 justify-center lg:justify-start">
               <a
                 href="https://github.com/amarpatil2002"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="w-14 h-14 rounded-full bg-white/5 border border-white/10 flex items-center justify-center text-white hover:bg-cyan-500 hover:border-cyan-500 hover:scale-110 transition-all duration-300"
+                className="w-12 h-12 sm:w-14 sm:h-14 rounded-full bg-white/5 border border-white/10 flex items-center justify-center text-white hover:bg-cyan-500 hover:border-cyan-500 hover:scale-110 transition-all duration-300"
               >
-                <FaGithub size={24} />
+                <FaGithub size={22} />
               </a>
 
               <a
                 href="https://www.linkedin.com/in/amarjit-patil-392a01242"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="w-14 h-14 rounded-full bg-white/5 border border-white/10 flex items-center justify-center text-white hover:bg-cyan-500 hover:border-cyan-500 hover:scale-110 transition-all duration-300"
+                className="w-12 h-12 sm:w-14 sm:h-14 rounded-full bg-white/5 border border-white/10 flex items-center justify-center text-white hover:bg-cyan-500 hover:border-cyan-500 hover:scale-110 transition-all duration-300"
               >
-                <FaLinkedin size={24} />
+                <FaLinkedin size={22} />
               </a>
 
               <a
                 href="https://www.instagram.com/"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="w-14 h-14 rounded-full bg-white/5 border border-white/10 flex items-center justify-center text-white hover:bg-cyan-500 hover:border-cyan-500 hover:scale-110 transition-all duration-300"
+                className="w-12 h-12 sm:w-14 sm:h-14 rounded-full bg-white/5 border border-white/10 flex items-center justify-center text-white hover:bg-cyan-500 hover:border-cyan-500 hover:scale-110 transition-all duration-300"
               >
-                <FaInstagram size={24} />
+                <FaInstagram size={22} />
               </a>
             </div>
           </motion.div>
@@ -109,15 +130,18 @@ export default function Contact() {
           <motion.form
             initial={{ opacity: 0, x: 40 }}
             whileInView={{ opacity: 1, x: 0 }}
+            transition={{ duration: 0.6 }}
             viewport={{ once: true }}
             className="
-            bg-white/5
-            backdrop-blur-lg
-            border
-            border-white/10
-            rounded-3xl
-            p-8
-            space-y-6
+              bg-white/5
+              backdrop-blur-xl
+              border
+              border-white/10
+              rounded-3xl
+              p-5
+              sm:p-6
+              lg:p-8
+              space-y-5
             "
           >
             <div>
@@ -125,16 +149,22 @@ export default function Contact() {
                 type="text"
                 placeholder="Your Name"
                 className="
-                w-full
-                bg-[#1E293B]
-                border
-                border-white/10
-                rounded-xl
-                px-5
-                py-4
-                text-white
-                outline-none
-                focus:border-cyan-500
+                  w-full
+                  bg-[#1E293B]
+                  border
+                  border-white/10
+                  rounded-xl
+                  px-4
+                  sm:px-5
+                  py-3
+                  sm:py-4
+                  text-sm
+                  sm:text-base
+                  text-white
+                  placeholder:text-gray-500
+                  outline-none
+                  focus:border-cyan-500
+                  transition
                 "
               />
             </div>
@@ -144,16 +174,22 @@ export default function Contact() {
                 type="email"
                 placeholder="Your Email"
                 className="
-                w-full
-                bg-[#1E293B]
-                border
-                border-white/10
-                rounded-xl
-                px-5
-                py-4
-                text-white
-                outline-none
-                focus:border-cyan-500
+                  w-full
+                  bg-[#1E293B]
+                  border
+                  border-white/10
+                  rounded-xl
+                  px-4
+                  sm:px-5
+                  py-3
+                  sm:py-4
+                  text-sm
+                  sm:text-base
+                  text-white
+                  placeholder:text-gray-500
+                  outline-none
+                  focus:border-cyan-500
+                  transition
                 "
               />
             </div>
@@ -163,56 +199,74 @@ export default function Contact() {
                 type="text"
                 placeholder="Subject"
                 className="
-                w-full
-                bg-[#1E293B]
-                border
-                border-white/10
-                rounded-xl
-                px-5
-                py-4
-                text-white
-                outline-none
-                focus:border-cyan-500
+                  w-full
+                  bg-[#1E293B]
+                  border
+                  border-white/10
+                  rounded-xl
+                  px-4
+                  sm:px-5
+                  py-3
+                  sm:py-4
+                  text-sm
+                  sm:text-base
+                  text-white
+                  placeholder:text-gray-500
+                  outline-none
+                  focus:border-cyan-500
+                  transition
                 "
               />
             </div>
 
             <div>
               <textarea
-                rows="6"
+                rows={6}
                 placeholder="Write your message..."
                 className="
-                w-full
-                bg-[#1E293B]
-                border
-                border-white/10
-                rounded-xl
-                px-5
-                py-4
-                text-white
-                resize-none
-                outline-none
-                focus:border-cyan-500
+                  w-full
+                  bg-[#1E293B]
+                  border
+                  border-white/10
+                  rounded-xl
+                  px-4
+                  sm:px-5
+                  py-3
+                  sm:py-4
+                  text-sm
+                  sm:text-base
+                  text-white
+                  placeholder:text-gray-500
+                  resize-none
+                  outline-none
+                  focus:border-cyan-500
+                  transition
                 "
               />
             </div>
 
             <button
+              type="submit"
               className="
-              w-full
-              py-4
-              rounded-xl
-              bg-gradient-to-r
-              from-cyan-500
-              to-blue-600
-              text-white
-              font-semibold
-              flex
-              justify-center
-              items-center
-              gap-2
-              hover:scale-[1.02]
-              transition
+                w-full
+                py-3
+                sm:py-4
+                rounded-xl
+                bg-gradient-to-r
+                from-cyan-500
+                to-blue-600
+                text-white
+                font-semibold
+                flex
+                items-center
+                justify-center
+                gap-2
+                shadow-lg
+                shadow-cyan-500/20
+                hover:scale-[1.02]
+                hover:shadow-cyan-500/40
+                transition-all
+                duration-300
               "
             >
               <Send size={18} />
