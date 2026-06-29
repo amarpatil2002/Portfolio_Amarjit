@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
 import { Briefcase, FolderGit2, Code2, Trophy } from "lucide-react";
+import aboutImg from "../assets/about.png";
 
 const stats = [
   {
@@ -8,19 +9,9 @@ const stats = [
     label: "Years Experience",
   },
   {
-    icon: <FolderGit2 size={28} />,
-    value: "15+",
-    label: "Projects",
-  },
-  {
     icon: <Code2 size={28} />,
     value: "10+",
     label: "Technologies",
-  },
-  {
-    icon: <Trophy size={28} />,
-    value: "100%",
-    label: "Client Satisfaction",
   },
 ];
 
@@ -43,7 +34,7 @@ export default function About() {
           </span>
 
           <h2 className="text-4xl md:text-6xl font-bold text-white mt-4">
-            Passionate React
+            Passionate MERN Stack
             <span className="bg-gradient-to-r from-cyan-400 to-blue-500 bg-clip-text text-transparent">
               {" "}
               Developer
@@ -62,7 +53,7 @@ export default function About() {
             <div className="absolute inset-0 bg-gradient-to-r from-cyan-500 to-blue-600 rounded-3xl blur-xl opacity-30" />
 
             <img
-              src="/about.jpg"
+              src={aboutImg}
               alt="Developer"
               className="relative rounded-3xl border border-white/10 object-cover w-full h-[550px]"
             />
@@ -75,7 +66,7 @@ export default function About() {
             transition={{ duration: 0.7 }}
           >
             <h3 className="text-3xl font-bold text-white mb-6">
-              MERN Stack Developer with 2 Years Experience
+              Node.js Developer with 2 Years Experience
             </h3>
 
             <p className="text-gray-400 leading-8 text-lg">
@@ -162,7 +153,8 @@ export default function About() {
                 Download Resume
               </button>
 
-              <button
+              <a
+                href="#contact"
                 className="
                 px-8 py-3
                 rounded-full
@@ -175,7 +167,7 @@ export default function About() {
                 "
               >
                 Contact Me
-              </button>
+              </a>
             </div>
           </motion.div>
         </div>

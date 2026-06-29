@@ -1,5 +1,6 @@
 import { Download, FileText } from "lucide-react";
 import { motion } from "framer-motion";
+import resume from "../assets/resume.pdf";
 
 export default function Resume() {
   return (
@@ -62,7 +63,7 @@ export default function Resume() {
               </div>
 
               <h3 className="text-3xl font-bold text-white">
-                React / MERN Developer
+                Node.js / MERN Developer
               </h3>
 
               <p className="text-gray-400 mt-4 leading-8">
@@ -72,7 +73,7 @@ export default function Resume() {
               </p>
 
               <a
-                href="/resume.pdf"
+                href={resume}
                 download
                 className="
                   inline-flex
@@ -105,7 +106,7 @@ export default function Resume() {
               </div>
 
               <div className="p-6 rounded-2xl bg-white/5 border border-white/10">
-                <h4 className="text-4xl font-bold text-cyan-400">15+</h4>
+                <h4 className="text-4xl font-bold text-cyan-400">5+</h4>
                 <p className="text-gray-400 mt-2">Projects Built</p>
               </div>
 

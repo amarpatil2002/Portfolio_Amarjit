@@ -74,7 +74,7 @@ export default function Footer() {
 
             <div className="flex gap-4">
               <a
-                href="https://github.com/yourusername"
+                href="https://github.com/amarpatil2002"
                 target="_blank"
                 rel="noreferrer"
                 className="
@@ -98,7 +98,7 @@ export default function Footer() {
               </a>
 
               <a
-                href="https://linkedin.com/in/yourprofile"
+                href="https://www.linkedin.com/in/amarjit-patil-392a01242"
                 target="_blank"
                 rel="noreferrer"
                 className="
@@ -122,7 +122,7 @@ export default function Footer() {
               </a>
 
               <a
-                href="https://instagram.com/yourusername"
+                href="https://instagram.com/"
                 target="_blank"
                 rel="noreferrer"
                 className="
@@ -146,7 +146,7 @@ export default function Footer() {
               </a>
 
               <a
-                href="mailto:yourmail@gmail.com"
+                href="mailto:amarjitpatil2002@gmail.com"
                 className="
                 w-12
                 h-12

@@ -48,9 +48,12 @@ export default function Hero() {
                 Hire Me
               </button>
 
-              <button className="px-8 py-4 border border-slate-700 text-white rounded-xl hover:bg-slate-900 transition">
+              <a
+                href="#projects"
+                className="px-8 py-4 border border-slate-700 text-white rounded-xl hover:bg-slate-900 transition"
+              >
                 View Projects
-              </button>
+              </a>
             </div>
           </div>
 

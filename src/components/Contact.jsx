@@ -52,7 +52,7 @@ export default function Contact() {
                 <Mail className="text-cyan-400" />
                 <div>
                   <h4 className="text-white font-semibold">Email</h4>
-                  <p className="text-gray-400">yourmail@gmail.com</p>
+                  <p className="text-gray-400">amarjitpatil2002@gmail.com</p>
                 </div>
               </div>
 
@@ -60,7 +60,7 @@ export default function Contact() {
                 <Phone className="text-cyan-400" />
                 <div>
                   <h4 className="text-white font-semibold">Phone</h4>
-                  <p className="text-gray-400">+91 XXXXX XXXXX</p>
+                  <p className="text-gray-400">+91 76662 25895</p>
                 </div>
               </div>
 
@@ -74,19 +74,33 @@ export default function Contact() {
             </div>
 
             {/* Social Icons */}
-            <div className="flex gap-4 mt-10">
+            {/* Social Icons */}
+            <div className="flex gap-5 mt-10">
               <a
-                href="#"
-                className="w-14 h-14 rounded-full bg-white/5 border border-white/10 flex items-center justify-center hover:border-cyan-500 transition"
+                href="https://github.com/amarpatil2002"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="w-14 h-14 rounded-full bg-white/5 border border-white/10 flex items-center justify-center text-white hover:bg-cyan-500 hover:border-cyan-500 hover:scale-110 transition-all duration-300"
               >
-                <FaGithub />
+                <FaGithub size={24} />
               </a>
 
               <a
-                href="#"
-                className="w-14 h-14 rounded-full bg-white/5 border border-white/10 flex items-center justify-center hover:border-cyan-500 transition"
+                href="https://www.linkedin.com/in/amarjit-patil-392a01242"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="w-14 h-14 rounded-full bg-white/5 border border-white/10 flex items-center justify-center text-white hover:bg-cyan-500 hover:border-cyan-500 hover:scale-110 transition-all duration-300"
               >
-                <FaLinkedin />
+                <FaLinkedin size={24} />
+              </a>
+
+              <a
+                href="https://www.instagram.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="w-14 h-14 rounded-full bg-white/5 border border-white/10 flex items-center justify-center text-white hover:bg-cyan-500 hover:border-cyan-500 hover:scale-110 transition-all duration-300"
+              >
+                <FaInstagram size={24} />
               </a>
             </div>
           </motion.div>

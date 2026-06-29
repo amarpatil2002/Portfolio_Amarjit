@@ -16,7 +16,6 @@ export default function App() {
 
       <Hero />
       <About />
-      <Skills />
       <TechStack />
       <Projects />
       <GithubStats />
